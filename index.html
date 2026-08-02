@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skywalkerwhack</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8f8f4;
+      --fg: #111;
+      --muted: #666;
+      --rule: #d8d8d0;
+      --link: #111;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --fg: #f2f2ea;
+        --muted: #aaa;
+        --rule: #333;
+        --link: #f2f2ea;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Courier, "Courier New", monospace;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 56px auto;
+    }
+
+    header,
+    nav,
+    section,
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+      margin-top: 28px;
+    }
+
+    h1,
+    h2,
+    p,
+    ul {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(32px, 8vw, 64px);
+      font-weight: 400;
+      letter-spacing: -0.08em;
+      line-height: 0.95;
+      text-transform: lowercase;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      text-transform: lowercase;
+    }
+
+    p + p,
+    ul {
+      margin-top: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .meta,
+    footer {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .mark {
+      color: var(--muted);
+      display: inline-block;
+      width: 4ch;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>skywalkerwhack</h1>
+
+    <header>
+      <p>个人主页入口。放一点项目、笔记、判断和还没分类的东西。</p>
+      <p class="meta">minimal / plain / elegant / courier only</p>
+    </header>
+
+    <nav aria-label="site">
+      <h2>index</h2>
+      <ul>
+        <li><span class="mark">01</span><a href="/github_repo_critic/">github repo critic</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>now</h2>
+      <p>保持页面安静，内容慢慢长出来。</p>
+    </section>
+
+    <footer>
+      <p>last edited by hand.</p>
+    </footer>
+  </main>
+</body>
+</html>
