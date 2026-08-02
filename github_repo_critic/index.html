@@ -4,98 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>github repo critic</title>
+  <link rel="stylesheet" href="/styles.css">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f8f8f4;
-      --fg: #111;
-      --muted: #666;
-      --rule: #d8d8d0;
-      --link: #111;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #111;
-        --fg: #f2f2ea;
-        --muted: #aaa;
-        --rule: #333;
-        --link: #f2f2ea;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: Courier, "Courier New", monospace;
-      font-size: 16px;
-      line-height: 1.65;
-    }
-
-    main {
-      width: min(760px, calc(100% - 32px));
-      margin: 56px auto;
-    }
-
-    header,
-    article,
-    footer {
-      border-top: 1px solid var(--rule);
-      padding-top: 20px;
-      margin-top: 28px;
-    }
-
-    h1,
-    h2,
-    p,
-    ul {
-      margin: 0;
-    }
-
-    h1 {
-      font-size: clamp(28px, 6vw, 48px);
-      font-weight: 400;
-      letter-spacing: -0.06em;
-      line-height: 1;
-      text-transform: lowercase;
-    }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 12px;
-      text-transform: lowercase;
-    }
-
-    p + p,
-    ul {
-      margin-top: 12px;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
-    .meta,
-    footer {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
     .entry {
       padding-bottom: 4px;
     }
 
     .empty {
-      color: var(--muted);
       font-style: normal;
     }
   </style>
@@ -109,9 +24,9 @@
       <p class="meta">plain html / minimalist / courier only</p>
     </header>
 
-    <article class="entry">
+    <article class="entry rule-block">
       <h2>待记录</h2>
-      <p class="empty">还没有正式条目。之后可以按 repo、日期、结论和链接追加。</p>
+      <p class="empty muted">还没有正式条目。之后可以按 repo、日期、结论和链接追加。</p>
       <ul>
         <li>repo: <a href="https://github.com/" rel="noreferrer">github.com/...</a></li>
         <li>critic: 一句话指出问题或亮点。</li>
