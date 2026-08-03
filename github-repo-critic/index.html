@@ -13,6 +13,44 @@
     .empty {
       font-style: normal;
     }
+
+    .alpha-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 20px;
+    }
+
+    .alpha-nav a {
+      text-decoration: none;
+      border: 1px solid var(--rule);
+      padding: 2px 7px;
+    }
+
+    .alpha-nav a:hover {
+      border-color: var(--fg);
+    }
+
+    .alpha-groups {
+      display: grid;
+      gap: 16px;
+    }
+
+    .alpha-group {
+      padding-top: 8px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .alpha-group h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .repo-list {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -25,13 +63,175 @@
     </header>
 
     <article class="entry rule-block">
-      <h2>待记录</h2>
-      <p class="empty muted">还没有正式条目。之后可以按 repo、日期、结论和链接追加。</p>
-      <ul>
-        <li>repo: <a href="https://github.com/" rel="noreferrer">github.com/...</a></li>
-        <li>critic: 一句话指出问题或亮点。</li>
-        <li>notes: 证据、上下文、替代方案。</li>
-      </ul>
+      <h2>repo index</h2>
+      <p class="meta">按 repo_author/repo_name 的首字母分组，方便从 A 到 Z 浏览。</p>
+
+      <nav class="alpha-nav" aria-label="alphabet navigation">
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a href="#C">C</a>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a href="#H">H</a>
+        <a href="#I">I</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a href="#L">L</a>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#O">O</a>
+        <a href="#P">P</a>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a href="#T">T</a>
+        <a href="#U">U</a>
+        <a href="#V">V</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+      </nav>
+
+      <div class="alpha-groups">
+        <section class="alpha-group" id="A">
+          <h3>A</h3>
+          <ul class="repo-list">
+            <li><a href="https://github.com/author/repo" rel="noreferrer">author/repo</a></li>
+          </ul>
+        </section>
+
+        <section class="alpha-group" id="B">
+          <h3>B</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="C">
+          <h3>C</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="D">
+          <h3>D</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="E">
+          <h3>E</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="F">
+          <h3>F</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="G">
+          <h3>G</h3>
+          <ul class="repo-list">
+            <li><a href="https://github.com/ghostty/ghostty" rel="noreferrer">ghostty/ghostty</a></li>
+          </ul>
+        </section>
+
+        <section class="alpha-group" id="H">
+          <h3>H</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="I">
+          <h3>I</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="J">
+          <h3>J</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="K">
+          <h3>K</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="L">
+          <h3>L</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="M">
+          <h3>M</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="N">
+          <h3>N</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="O">
+          <h3>O</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="P">
+          <h3>P</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="Q">
+          <h3>Q</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="R">
+          <h3>R</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="S">
+          <h3>S</h3>
+          <ul class="repo-list">
+            <li><a href="https://github.com/sindresorhus/awesome" rel="noreferrer">sindresorhus/awesome</a></li>
+          </ul>
+        </section>
+
+        <section class="alpha-group" id="T">
+          <h3>T</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="U">
+          <h3>U</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="V">
+          <h3>V</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="W">
+          <h3>W</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="X">
+          <h3>X</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="Y">
+          <h3>Y</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+
+        <section class="alpha-group" id="Z">
+          <h3>Z</h3>
+          <p class="empty muted">待补充</p>
+        </section>
+      </div>
     </article>
 
     <footer>
